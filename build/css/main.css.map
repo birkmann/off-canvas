@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAAA,GAAI;EACH,OAAO,EAAE,KAAK;;;ACDf,IAAK;EACJ,WAAW,EAAE,UAAU;EACvB,WAAW,EAAE,KAAK;EAClB,KAAK,ECHa,IAAI",
-"sources": ["../../source/sass/_navigation.scss","../../source/sass/_template.scss","../../source/sass/variables/_colors.scss"],
-"names": [],
-"file": "main.css"
-}
