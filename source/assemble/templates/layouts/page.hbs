@@ -1,6 +1,23 @@
 {{>site-header}}
-	<div class="page-content">
-		<!--h2>{{this.page.title}}</h2-->
-		{{>body}}
+	<div class="main">
+		<header class="header-main">
+			<div class="page-wrapper">
+				<button class="button-nav-toggle">Menu</button>
+			</div>
+		</header>
+		<section class="section-stage"></section>
+		<div class="page-wrapper">
+			{{>body}}
+		</div>
+	</div>
+	<div class="menu">
+		<nav class="nav-main">
+			<ul>
+				<li><a href="">Home</a></li>
+				<li><a href="">About</a></li>
+				<li><a href="">Downloads</a></li>
+				<li><a href="">Contact</a></li>
+			</ul>
+		</nav>
 	</div>
 {{>site-footer}}

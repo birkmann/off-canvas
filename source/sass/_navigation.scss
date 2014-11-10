@@ -1,3 +1,26 @@
-nav {
-	display: block;
+.button-nav-toggle {
+	float: right;
+	border: 0 none;
+	background: none;
+	font-size: 16px;
+	color: #000;
+	outline: none;
+	cursor: pointer;
+}
+
+.nav-main {
+	transition: right 0.25s ease-in-out;
+	background: #f1f2f3;
+	position: fixed;
+	overflow: auto;
+	width: 280px;
+	right: -280px;
+	top: 0;
+	bottom: 0;
+}
+
+.open {
+	.nav-main {
+		right: 0;
+	}
 }
