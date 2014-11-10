@@ -1,25 +1,25 @@
 {
-  "name": "boilerplate",
+  "name": "off-canvas",
   "version": "0.0.1",
-  "description": "A simple front-end boilerplate.",
+  "description": "A simple off-canvas pattern.",
   "main": "Gruntfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Refugee/boilerplate.git"
+    "url": "https://github.com/Refugee/off-canvas.git"
   },
   "keywords": [
     "grunt",
-    "boilerplate"
+    "off-canvas"
   ],
   "author": "Rafael Birkmann",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Refugee/boilerplate/issues"
+    "url": "https://github.com/Refugee/off-canvas/issues"
   },
-  "homepage": "https://github.com/Refugee/boilerplate",
+  "homepage": "https://github.com/Refugee/off-canvas",
   "devDependencies": {
     "grunt": "^0.4.5",
     "assemble": "^0.4.42",
