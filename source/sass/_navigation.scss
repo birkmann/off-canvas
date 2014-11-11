@@ -20,25 +20,67 @@ $nav-color: 	#4d5152;
 	right: -280px;
 	top: 0;
 	bottom: 0;
-	ul {
-		margin: 0;
-		padding: 0 20px;
-		li {
-			list-style: none;
-			border-bottom: 1px solid #d5d7da;
-			a {
-				text-decoration: none;
-				display: block;
-				padding: 20px 0;
-				color: $nav-color;
-				&:hover {
+	.nav-container {
+		transition: left 0.25s ease-in-out;
+		position: relative;
+		left: 0;
+		&.show-sub {
+			left: -280px;
+		}
+		ul {
+			margin: 0;
+			padding: 0 20px;
+			li {
+				list-style: none;
+				border-bottom: 1px solid #d5d7da;
+				a {
+					text-decoration: none;
+					display: block;
+					padding: 20px 0;
 					color: $nav-color;
+					font-size: 16px;
+					&:hover {
+						color: $nav-color;
+					}
 				}
-			}
-			ul {
-				position: absolute;
-				right: -320px;
-				top: 0;
+				ul {
+					display: none;
+					width: 280px;
+					position: absolute;
+					right: -280px;
+					top: 0;
+					li {
+						border: 0 none;
+						&.nav-label {
+							border-top: 1px solid #d5d7da;
+							padding: 25px 0 10px;
+						}
+						a {
+							padding: 7px 0 15px;
+							font-size: 14px;
+							&.back {
+								font-size: 16px;
+								font-weight: bold;
+								text-transform: uppercase;
+								padding: 20px 25px;
+								background: url("../img/arrow-left.png") left center no-repeat;
+							}
+						}
+					}
+				}
+				&.has-sub-nav {
+					a {
+						background: url("../img/arrow-right.png") right center no-repeat;
+					}
+					ul a {
+						background: none;
+					}
+				}
+				&.active {
+					ul {
+						display: block;
+					}
+				}
 			}
 		}
 	}
