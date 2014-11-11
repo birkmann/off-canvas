@@ -1,4 +1,12 @@
+*,
+*:before,
+*:after {
+	box-sizing: border-box; 
+}
+
 body {
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
 	font-family: sans-serif;
 	line-height: 1.6em;
 	color: $text-color-dark;

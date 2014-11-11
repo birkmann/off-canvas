@@ -13,4 +13,6 @@ $(document).ready(function(){
 		};
 	});
 
+	$(".nav-main li:has(ul)").addClass("has-sub-nav").prepend("<div class=\"sub-toggle\"></div>")
+
 });

@@ -1,3 +1,6 @@
+$nav-bg: 		#f1f2f3;
+$nav-color: 	#4d5152;
+
 .button-nav-toggle {
 	float: right;
 	border: 0 none;
@@ -10,13 +13,35 @@
 
 .nav-main {
 	transition: right 0.25s ease-in-out;
-	background: #f1f2f3;
+	background: $nav-bg;
 	position: fixed;
-	overflow: auto;
+	overflow-x: hidden;
 	width: 280px;
 	right: -280px;
 	top: 0;
 	bottom: 0;
+	ul {
+		margin: 0;
+		padding: 0 20px;
+		li {
+			list-style: none;
+			border-bottom: 1px solid #d5d7da;
+			a {
+				text-decoration: none;
+				display: block;
+				padding: 20px 0;
+				color: $nav-color;
+				&:hover {
+					color: $nav-color;
+				}
+			}
+			ul {
+				position: absolute;
+				right: -320px;
+				top: 0;
+			}
+		}
+	}
 }
 
 .open {
