@@ -1,3 +1,6 @@
+// import vendor/modernizr.js
+// import vendor/jquery.js
+
 $(document).ready(function(){
 
 	$(".button-nav-toggle").click(function(){
